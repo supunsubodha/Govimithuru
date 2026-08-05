@@ -1,0 +1,136 @@
+@page "/about"
+
+<PageTitle>About Us - GoviMithuru</PageTitle>
+
+<div class="about-container">
+    <header class="hero-header">
+        <h1>GoviMithuru</h1>
+        <p>Connecting Sri Lankan Farmers Directly to Wholesale Buyers</p>
+    </header>
+
+    <!-- About Us Section -->
+    <section class="info-card">
+        <h2>About Us</h2>
+        <p>
+            <strong>GoviMithuru</strong> is a Sri Lankan digital platform dedicated to transforming the fresh produce supply chain. We connect local farmers directly with bulk buyers, supermarkets, restaurants, and wholesale traders across the island. By removing unnecessary intermediaries, we ensure fair earnings for hard-working farmers while delivering high-quality, farm-fresh fruits and vegetables to buyers at true wholesale market prices.
+        </p>
+    </section>
+
+    <!-- Vision & Mission -->
+    <div class="grid-2">
+        <section class="info-card">
+            <h2>Our Vision</h2>
+            <p>
+                To become Sri Lanka's leading digital agricultural ecosystem, empowering farming communities and establishing a sustainable, transparent, and fair wholesale marketplace for fresh produce.
+            </p>
+        </section>
+
+        <section class="info-card">
+            <h2>Our Mission</h2>
+            <p>
+                To eliminate inefficient supply chains by providing a direct platform that connects farmers with wholesale buyers, securing fair market rates, reducing post-harvest wastage, and guaranteeing fresh produce delivery islandwide.
+            </p>
+        </section>
+    </div>
+
+    <!-- Contact Us Section -->
+    <section class="info-card">
+        <h2>Contact Us</h2>
+        <div class="grid-2">
+            <div>
+                <p><strong>Have questions or want to partner with us?</strong></p>
+                <p>Reach out to the GoviMithuru team directly using the form or our details below.</p>
+                <br />
+                <p>📍 <strong>Location:</strong> Colombo / Kandy, Sri Lanka</p>
+                <p>📧 <strong>Email:</strong> info@govimithuru.lk</p>
+                <p>📞 <strong>Phone:</strong> +94 7X XXX XXXX</p>
+            </div>
+
+            <form class="contact-form">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" placeholder="Enter your full name" required />
+
+                <label for="email">Email Address</label>
+                <input type="email" id="email" placeholder="Enter your email" required />
+
+                <label for="message">Message</label>
+                <textarea id="message" rows="4" placeholder="How can we help you?" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+</div>
+
+<style>
+    .about-container {
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 1.5rem;
+        font-family: Arial, sans-serif;
+    }
+
+    .hero-header {
+        background-color: #2e7d32;
+        color: white;
+        text-align: center;
+        padding: 2rem 1rem;
+        border-radius: 8px;
+        margin-bottom: 2rem;
+    }
+
+    .hero-header h1 {
+        margin: 0 0 0.5rem 0;
+    }
+
+    .info-card {
+        background: #ffffff;
+        border: 1px solid #e0e0e0;
+        border-left: 5px solid #2e7d32;
+        border-radius: 8px;
+        padding: 1.5rem;
+        margin-bottom: 1.5rem;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    }
+
+    .info-card h2 {
+        color: #2e7d32;
+        margin-top: 0;
+    }
+
+    .grid-2 {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 1.5rem;
+    }
+
+    .contact-form label {
+        display: block;
+        margin: 0.8rem 0 0.3rem;
+        font-weight: bold;
+    }
+
+    .contact-form input, 
+    .contact-form textarea {
+        width: 100%;
+        padding: 0.6rem;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+
+    .contact-form button {
+        margin-top: 1rem;
+        background-color: #2e7d32;
+        color: white;
+        border: none;
+        padding: 0.7rem 1.5rem;
+        border-radius: 4px;
+        cursor: pointer;
+        font-weight: bold;
+    }
+
+    .contact-form button:hover {
+        background-color: #1b5e20;
+    }
+</style>
